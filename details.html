@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Stack</title>
+    <link rel="icon" href="./assets/Moviestack_isotipo.png" type="image/x-icon">
+
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mt-12">
+    <div class="flex flex-col min">
+      <!-- Barra de navegación -->
+      <header class="bg-rose-700 text-white md:h-24">
+        <div class="container mx-auto px-4 md:px-6 xl:px-0 flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-xl"><i class="fas fa-icono"></i></span>
+            <img src="./assets/Moviestack_isotipo.png" alt="Logo" class="h-12 md:h-16 xl:h-24 p-0">
+            <img src="./assets/Moviestack_logotipo1.png" alt="titulo" class="h-8 md:h-12 xl:h-16 p-0">
+          </div>
+          <nav>
+            <ul class="flex space-x-4 md:space-x-12">
+              <li>
+                <a href="./index.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Home</a>
+              </li>
+              <li>
+                <a href="./movie.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Movies</a>
+              </li>
+              <li>
+                <a href="./favorites.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Favs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div id="verMas"></div>
+
+      </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+          &copy; MINDHUB 2024 - COHORT 55 - Carolina Pineiro. Todos los derechos
+          reservados.
+        </div>
+      </footer>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+    <script src="./details.js"></script>
+  </body>
+</html>

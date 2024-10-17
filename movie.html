@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Stack </title>
+    <link rel="icon" href="./assets/Moviestack_isotipo.png" type="image/x-icon">
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mt-12">
+    <div class="flex flex-col min">
+        <!-- Barra de navegación -->
+        <header class="bg-rose-700 text-white md:h-24">
+            <div class="container mx-auto px-4 md:px-6 xl:px-0 flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-xl"><i class="fas fa-icono"></i></span>
+                <img src="./assets/Moviestack_isotipo.png" alt="Logo" class="h-12 md:h-16 xl:h-24 p-0">
+                <img src="./assets/Moviestack_logotipo1.png" alt="titulo" class="h-8 md:h-12 xl:h-16 p-0">
+              </div>
+              <nav>
+                <ul class="flex space-x-4 md:space-x-12">
+                  <li>
+                    <a href="./index.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="border-2 border-gray-400 border-opacity-60 hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl shadow-2xl  ">Movies</a>
+                  </li>
+                  <li>
+                    <a href="./favorites.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Favs</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+        <!-- <section class="w-screen flex items-center justify-center">
+            <div class="container mx-auto text-center">
+                <h1 class="text-6xl font-bold text-gray-500 uppercase tracking-widest mt-12 mb-12 text-center ">MOVIES</h1>
+
+        </section> -->
+        <section class="w-full flex">
+          <div class="flex w-full justify-center">
+            
+            <img src="./assets/bannerMovies.png" alt="" class="w-full object-cover" />
+          </div>
+        </section>
+
+        <!-- Agregamos el select y el search -->
+
+        <div class="flex flex-col md:flex-row w-auto">
+          <!-- Select -->
+          <div class="w-80 mt-12 md:w-1/2 mb-4 md:mb-0 m-4">
+            <label for="select" class="block text-sm font-medium text-gray-700">Genres:</label>
+            <div class="relative">
+              <select id="select" name="select" class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                <!-- Opciones generadas dinámicamente irán aquí -->
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M9.293 11.293a1 1 0 0 0 1.414-1.414l-3-3a1 1 0 0 0-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 0 0 1.414 1.414l3-3z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Search -->
+          <div class="w-80 mt-12 md:w-1/2 mb-4 md:mb-0 m-4">
+            <label for="search" class="block text-sm font text-gray-700">Search:</label>
+            <div class="relative">
+              <input id="search" type="text" placeholder="Buscar..."
+                     class="block w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M9.293 11.293a1 1 0 0 0 1.414-1.414l-3-3a1 1 0 0 0-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 0 0 1.414 1.414l3-3z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main id="contenedor" class="flex flex-wrap justify-center gap-2">
+
+
+        </main>
+
+        <footer class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto text-center">
+                &copy; MINDHUB 2024 - COHORT 55 - Carolina Pineiro. Todos los derechos reservados.
+            </div>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./details.js"></script>
+    <script src="./favorites.js"></script>
+    
+</body>
+</html>

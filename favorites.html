@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Stack</title>
+    <link rel="icon" href="./assets/Moviestack_isotipo.png" type="image/x-icon">
+
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body class="mt-12">
+    <div class="flex flex-col min">
+      <!-- Barra de navegación -->
+      <header class="bg-rose-700 text-white md:h-24">
+        <div class="container mx-auto px-4 md:px-6 xl:px-0 flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-xl"><i class="fas fa-icono"></i></span>
+            <img src="./assets/Moviestack_isotipo.png" alt="Logo" class="h-12 md:h-16 xl:h-24 p-0">
+            <img src="./assets/Moviestack_logotipo1.png" alt="titulo" class="h-8 md:h-12 xl:h-16 p-0">
+          </div>
+          <nav>
+            <ul class="flex space-x-4 md:space-x-12">
+              <li>
+                <a href="./index.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Home</a>
+              </li>
+              <li>
+                <a href="./movie.html" class="hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl">Movies</a>
+              </li>
+              <li>
+                <a href="#" class="border-2 border-gray-400 border-opacity-60 hover:text-gray-300 md:hover:text-gray-200 active:border-2 p-2 md:p-3 xl:p-4 rounded-xl text-base md:text-lg xl:text-xl shadow-2x">Favs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="w-full flex">
+        <div class="flex w-full justify-center">
+          
+          <img src=" " alt="" class="w-full object-cover" </img>
+        </div>
+      </section>
+      <main>
+  <section>
+    
+    <div id="movies-favs" class="flex flex-col md:flex-row pb-2 md:flex-wrap gap-x-4 gap-y-2 justify-center mt-4 bg-gray-300">
+      
+    </div>
+    <div class="flex justify-center">
+      <button id="reset-favorites" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded flex items-center space-x-2 m-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2.293 4.293a1 1 0 011.414 0l1.336 1.336a1 1 0 001.414 0L10 3.414l2.543 2.543a1 1 0 001.414 0l1.336-1.336a1 1 0 011.414 1.414l-1.95 1.95a3 3 0 01-4.242 0L10 6.586 7.707 8.879a3 3 0 01-4.243 0l-1.95-1.95a1 1 0 010-1.414z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M6 12a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H7a1 1 0 01-1-1v-6zm1 1v4h4v-4H7z" clip-rule="evenodd" />
+          </svg>
+          <span>Reset</span>
+      </button>
+  </div>
+  
+  
+  </section>
+      </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+          &copy; MINDHUB 2024 - COHORT 55 - Carolina Pineiro. Todos los derechos
+          reservados.
+        </div>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./details.js"></script>
+    <script src="./favorites.js"></script>
+  </body>
+</html>
